@@ -107,7 +107,7 @@ variable "ec2_image_id" {
     type        = string
 }
 
-#variables for ami
+#variables for instance type
 variable "ec2_instance_type" {
     default     = "t2.micro"
     description = "ec2 instance type"
@@ -118,5 +118,19 @@ variable "ec2_instance_type" {
 variable "ec2_key_pair_name" {
     default     = "myec2key"
     description = "name of the ec2 key pair"
+    type        = string
+}
+
+#variables for domain name
+variable "domain_name" {
+    default     = "oluprojects.com"
+    description = "domain name"
+    type        = string
+}
+
+#variables for record name
+variable "record_name" {
+    default     = "www"
+    description = "sub domain name"
     type        = string
 }
