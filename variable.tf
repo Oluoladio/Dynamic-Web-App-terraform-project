@@ -81,14 +81,14 @@ variable "multi_az_deployment" {
 
 # application load balancer variables
 variable "ssl_certificate_arn" {
-    default     = "arn:aws:acm:us-east-1:055929589774:certificate/b636455e-3906-4b83-93a2-228907dcb7c1"
+    default     = "arn:aws:acm:us-east-1:0xxxxxxxx4:certificate/arn"
     description = "ssl certificate arn"
     type        = string
 }
 
 #sns topic variable
 variable "operator_email" {
-    default     = "olubukoladio@gmail.com"
+    default     = "abc@gmail.com"
     description = "a valid email address"
     type        = string
 }
@@ -116,14 +116,14 @@ variable "ec2_instance_type" {
 
 #variables for key pair
 variable "ec2_key_pair_name" {
-    default     = "myec2key"
+    default     = "yourec2key"
     description = "name of the ec2 key pair"
     type        = string
 }
 
 #variables for domain name
 variable "domain_name" {
-    default     = "oluprojects.com"
+    default     = "mydomain.com"
     description = "domain name"
     type        = string
 }
