@@ -1,2 +1,2 @@
 # Dynamic Web App on Terraform
-sample terraform project
+Using Terraform to deploy AWS resources for a dynamic web app
